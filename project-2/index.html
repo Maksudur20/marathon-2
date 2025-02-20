@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="cards">
+            <button id="account_btn" class="button active">Account</button>
+            <button id="password_btn" class="button">Password</button>
+        </div>
+        
+        <div id="account" class="content active">
+            <h2>Account</h2>
+            <p>Make changes to your account here. Click save when you're done.</p>
+            <label for="name">Name</label>
+            <input type="text" id="name" >
+            
+            <label for="username">Username</label>
+            <input type="text" id="username" >
+            
+            <button class="save-button">Save changes</button>
+        </div>
+        
+        <div id="password" class="content">
+            <h2>Password</h2>
+            <p>Change your password here. After saving, you'll be logged out.</p>
+            
+            <label for="current-pass">Current password</label>
+            <input type="password" id="current-pass">
+            
+            <label for="new-pass">New password</label>
+            <input type="password" id="new-pass">
+            
+            <button class="save-button">Save password</button>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
